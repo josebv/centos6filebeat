@@ -1,0 +1,11 @@
+---
+- hosts: all
+  sudo: yes
+  roles:
+    - filebeat
+  tasks:
+    - lineinfile: dest=/etc/hosts line='10.0.1.34    logstash1.ipa.beenverified.com' state=present
+    - lineinfile: dest=/etc/hosts line='10.0.1.89    logstash2.ipa.beenverified.com' state=present
+    - lineinfile: dest=/etc/hosts line='10.0.1.138   logstash3.ipa.beenverified.com' state=present
+    - lineinfile: dest=/etc/hosts line='10.0.1.228   logstash4.ipa.beenverified.com' state=present
+

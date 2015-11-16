@@ -1,0 +1,12 @@
+# vim:ft=sh
+
+[centos6]
+#centos6_1 ansible_ssh_host=10.0.1.1
+#centos6_2 ansible_ssh_host=10.0.1.2
+#centos6_3 ansible_ssh_host=10.0.1.3
+centos6_test ansible_ssh_host=10.0.29.181
+
+[centos6:vars]
+ansible_ssh_private_key_file=~/.ssh/id_rsa
+ansible_ssh_user=root
+
